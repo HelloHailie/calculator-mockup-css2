@@ -1,0 +1,143 @@
+* {
+  font-size: 28px;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  box-sizing: border-box;
+}
+
+.calculator {
+  width: 350px;
+  height: 500px;
+  border: 3px solid rgb(35, 31, 41);
+  border-radius: 12px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid red;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.calculatordisplay--bare {
+  padding: 15px;
+  background-clip: content-box;
+  height: 95px;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 215, 232);
+  border-radius: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.calculatorresult {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+#result-font {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.number-button {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  flex: 3;
+}
+
+.operator {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.line {
+  display: flex;
+  flex: 1;
+  background-color: rgb(177, 215, 232);
+  padding: 8px;
+}
+
+input {
+  flex-grow: 1;
+  border: 0 solid black;
+  box-shadow: 3px 3px gray;
+}
+
+.crossline {
+  display: flex;
+  flex: 1;
+  background-color: rgb(177, 215, 232);
+  border-bottom-left-radius: 8px;
+  padding: 8px;
+}
+
+#zero {
+  flex: 2 1 0;
+  border-bottom-left-radius: 8px;
+}
+
+#dot {
+  flex: 1 1 0;
+}
+
+.operator-color {
+  background-color: rgb(166, 153, 213);
+  font-size: 40px;
+  border-radius: 30px;
+}
+
+.number-color {
+  background-color: rgb(242, 189, 210);
+  border-radius: 30px;
+}
+
+.AC-color {
+  background-color: rgb(240, 238, 175);
+  border-radius: 30px;
+}
+
+#handle-border-zero {
+  border-bottom-left-radius: 8px;
+}
+
+#handle-border-operator {
+  border-bottom-right-radius: 8px;
+}
+
+.number-color:hover {
+  background-color: #ffa9a9;
+}
+
+.operator-color:hover {
+  background-color: rgb(142, 132, 180);
+}
+.AC-color:hover {
+  background-color: rgb(218, 215, 150);
+}
+.number-color:active {
+  position: relative;
+  top: 3px;
+}
+.operator-color:active {
+  position: relative;
+  top: 3px;
+}
+.AC-color:active {
+  position: relative;
+  top: 3px;
+}
